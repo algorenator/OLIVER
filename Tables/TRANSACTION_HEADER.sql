@@ -1,0 +1,53 @@
+--
+-- TRANSACTION_HEADER  (Table) 
+--
+CREATE TABLE OLIVER.TRANSACTION_HEADER
+(
+  TH_EMPLOYER           VARCHAR2(100 BYTE),
+  TH_PLAN_ID            VARCHAR2(15 BYTE),
+  TH_START_DATE         DATE,
+  TH_END_DATE           DATE,
+  TH_PERIOD             DATE,
+  TH_UNITS              NUMBER(12,2)            DEFAULT 0,
+  TH_RATE               NUMBER(12,5)            DEFAULT 0,
+  TH_AMOUNT             NUMBER(12,2)            DEFAULT 0,
+  TH_PAYMENT_TYPE       VARCHAR2(50 BYTE),
+  TH_COMMENT            VARCHAR2(3000 BYTE),
+  TH_USER               VARCHAR2(100 BYTE),
+  TH_DATE_TIME          DATE,
+  TH_MEM_ID             VARCHAR2(15 BYTE),
+  TH_TRAN_ID            VARCHAR2(15 BYTE),
+  TH_POSTED_DATE        DATE,
+  TH_POSTED_USER        VARCHAR2(100 BYTE),
+  TH_CHEQUE             VARCHAR2(20 BYTE),
+  TH_UNITS_EARNED       NUMBER(12,2)            DEFAULT 0,
+  TH_RECD_AMT           NUMBER(12,2)            DEFAULT 0,
+  TH_VARIANCE_AMT       NUMBER(12,2)            DEFAULT 0,
+  TH_VAR_REASON         VARCHAR2(1000 BYTE),
+  TH_CLIENT_ID          VARCHAR2(20 BYTE),
+  TH_DEPOSIT_NUMBER     VARCHAR2(1000 BYTE),
+  TH_AGREE_ID           VARCHAR2(20 BYTE),
+  TH_DEPOSIT_SLIP_DATE  DATE,
+  TH_WRITE_OFF_AMT      NUMBER,
+  TH_TRAN_LABEL         VARCHAR2(100 BYTE)
+)
+TABLESPACE CDATV5DATAFILE
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

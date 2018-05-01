@@ -1,0 +1,111 @@
+--
+-- MACH1_PEN_STMTS_2016  (Table) 
+--
+CREATE TABLE OLIVER.MACH1_PEN_STMTS_2016
+(
+  PLANID                         VARCHAR2(26 BYTE),
+  PERSON_ID                      VARCHAR2(4 BYTE),
+  STATUSDATE                     DATE,
+  STATUS                         VARCHAR2(1 BYTE),
+  CONTROL_LIST_STATUS            VARCHAR2(2 BYTE),
+  DOB                            DATE,
+  ER_HRS_AS_AT_DEC_31_2015       NUMBER(26),
+  ER_HRS_IN_2016                 NUMBER(26),
+  HRS_CHECKING                   VARCHAR2(26 BYTE),
+  ER_HRS_AS_DEC_31_2016          NUMBER(26),
+  ER_AS_AT_DEC_31_2015           NUMBER(26),
+  EE_AS_AT_DEC_31_2015           NUMBER(26),
+  EE_IN_2016                     NUMBER(26),
+  EE_INT_IN_2016_MEPS            NUMBER(26),
+  EE_INT_IN_2016_CALC            NUMBER(26),
+  CHECKING                       VARCHAR2(26 BYTE),
+  EE_AS_AT_DEC_31_2016_CALC      NUMBER(26),
+  EE_AS_AT_DEC_31_2016_MEPS      NUMBER(26),
+  VOL_AS_AT_DEC_31_2015          NUMBER(26),
+  VOL_IN_2016                    NUMBER(26),
+  ER_AS_AT_DEC_31_2016           NUMBER(26),
+  VOL_INT_IN_2016_MEPS           NUMBER(26),
+  VOL_INT_IN_2016_CALC           NUMBER(26),
+  CHECK_1                        VARCHAR2(26 BYTE),
+  VOL_AS_AT_DEC_31_2016_CALC     NUMBER(26),
+  VOL_AS_AT_DEC_31_2016_MEPS     NUMBER(26),
+  STD_ACCT_DEC_31_2010           NUMBER(26),
+  STD_ACCT_DEC_31_2015           NUMBER(26),
+  STD_ACCT_DEC_31_2016           NUMBER(26),
+  CHECK_3                        VARCHAR2(26 BYTE),
+  STD_ACCT_INT_IN_2016           NUMBER(26),
+  ER_2011                        NUMBER(26),
+  SUP_ER_AS_DEC_2011             NUMBER(26),
+  ER_2012                        NUMBER(26),
+  SUP_ER_AS_DEC_2012             NUMBER(26),
+  ER_2013                        NUMBER(26),
+  SUP_ER_AS_DEC_2013             NUMBER(26),
+  ER_2014                        NUMBER(26),
+  SUP_ER_AS_DEC_2014             NUMBER(26),
+  ER_2015                        NUMBER(26),
+  SUP_ER_AS_DEC_2015             NUMBER(26),
+  ER_2016                        NUMBER(26),
+  INT_2016                       NUMBER(26),
+  SUP_ER_AS_DEC_2016             NUMBER(26),
+  TOTAL_STD_SUP                  NUMBER(26),
+  TOTAL_EE                       NUMBER(26),
+  TOTAL_VOL_                     NUMBER(26),
+  NRD_FOR_PROJNS                 DATE,
+  AGE                            NUMBER(26),
+  OF_YEARS_PRIOR_TO_RETIREMENT   NUMBER(26),
+  OF_MONTHS_PRIOR_TO_RETIREMENT  NUMBER(26),
+  NRD_FOR_STMT_DATA              VARCHAR2(26 BYTE),
+  ERD_FOR_STMT_DATA              VARCHAR2(26 BYTE),
+  EARNED_PENSIONPRIOR_2011       NUMBER(26),
+  CONVERSION_FACTOR              NUMBER(26),
+  STD_CONTRIB                    NUMBER(26),
+  SUP_VOL_MBR_CONTRIB            NUMBER(26),
+  PENSION_FROM_STD_CONTRIB       NUMBER(26),
+  MINUS10_PROJECTED_PENSION      NUMBER(26),
+  PLUS10_PROJECTED_PENSION       NUMBER(26),
+  STD_CONTRIB2                   NUMBER(26),
+  SUP_VOL_MBR_CONTRIB2           NUMBER(26),
+  PENSION_FROM_STD_CONTRIB2      NUMBER(26),
+  MINUS10_PROJECTED_PENSION2     NUMBER(26),
+  PLUS10_PROJECTED_PENSION2      NUMBER(26),
+  STD_CONTRIB3                   NUMBER(26),
+  SUP_VOL_MBR_CONTRIB3           NUMBER(26),
+  PENSION_FROM_STD_CONTRIB3      NUMBER(26),
+  MINUS10_PROJECTED_PENSION3     NUMBER(26),
+  PLUS10_PROJECTED_PENSION3      NUMBER(26),
+  STD_CONTRIB4                   NUMBER(26),
+  SUP_VOL_MBR_CONTRIB4           NUMBER(26),
+  PENSION_FROM_STD_CONTRIB4      NUMBER(26),
+  MINUS10_PROJECTED_PENSION4     NUMBER(26),
+  PLUS10_PROJECTED_PENSION4      NUMBER(26),
+  STD_CONTRIB5                   NUMBER(26),
+  SUPVOLMBR_CONTRIB5             NUMBER(26),
+  PENSION_FROM_STD_CONTRIB5      NUMBER(26),
+  MINUS10_PROJECTED_PENSION5     NUMBER(26),
+  PLUS10_PROJECTED_PENSION5      NUMBER(26),
+  STD_CONTRIB6                   NUMBER(26),
+  SUP_VOL_MBR_CONTRIB6           NUMBER(26),
+  PENSION_FROM_STD_CONTRIB6      NUMBER(26),
+  MIUS10_PROJECTED_PENSION6      NUMBER(26),
+  PLUS10_PROJECTED_PENSION6      NUMBER(26)
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

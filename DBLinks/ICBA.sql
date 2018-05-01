@@ -1,0 +1,9 @@
+--
+-- ICBA  (Database Link) 
+--
+CREATE DATABASE LINK ICBA
+ CONNECT TO ICBA
+ IDENTIFIED BY <PWD>
+ USING 'TEST';
+
+

@@ -1,0 +1,34 @@
+--
+-- TRAN_DETAILS_TEMP_FUNDS_DET  (Table) 
+--
+CREATE TABLE OLIVER.TRAN_DETAILS_TEMP_FUNDS_DET
+(
+  DTF_TRAN_ID   VARCHAR2(15 BYTE),
+  DTF_MEM_ID    NUMBER,
+  DTF_FUND      VARCHAR2(1000 BYTE),
+  DTF_UNITS     NUMBER(12,2)                    DEFAULT 0,
+  DTF_RATE      NUMBER(12,5)                    DEFAULT 0,
+  DTF_AMT       NUMBER(12,2)                    DEFAULT 0,
+  DTF_EMPLOYER  VARCHAR2(30 BYTE),
+  DTF_OCCU      VARCHAR2(100 BYTE)
+)
+TABLESPACE CDATV5DATAFILE
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

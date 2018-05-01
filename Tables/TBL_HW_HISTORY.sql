@@ -1,0 +1,38 @@
+--
+-- TBL_HW_HISTORY  (Table) 
+--
+CREATE TABLE OLIVER.TBL_HW_HISTORY
+(
+  HW_ID                 VARCHAR2(20 BYTE),
+  HW_CLIENT_ID          VARCHAR2(20 BYTE),
+  HW_PLAN_ID            VARCHAR2(20 BYTE),
+  HW_SMK_EFF_DATE       DATE,
+  HW_SP_SMK_EFF_DATE    DATE,
+  HW_DEP_STAT_EFF_DATE  DATE,
+  DATE_CREATED          DATE,
+  CREATED_BY            VARCHAR2(100 BYTE),
+  HW_SMOKING_STATUS     VARCHAR2(20 BYTE),
+  HW_DEP_STATUS         VARCHAR2(20 BYTE),
+  HW_CLASS_EFF_DATE     DATE,
+  HW_CLASS              VARCHAR2(20 BYTE)
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

@@ -1,0 +1,8 @@
+-- 
+-- Non Foreign Key Constraints for Table TBL_TEMPORARY_FILES 
+-- 
+ALTER TABLE OLIVER.TBL_TEMPORARY_FILES ADD (
+  PRIMARY KEY
+  (ID)
+  ENABLE VALIDATE);
+

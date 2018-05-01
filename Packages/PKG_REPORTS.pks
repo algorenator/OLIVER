@@ -1,0 +1,56 @@
+--
+-- PKG_REPORTS  (Package) 
+--
+CREATE OR REPLACE PACKAGE OLIVER.PKG_REPORTS IS
+    TYPE T_INS_CERT_BEN_R IS RECORD ( BEN_CODE VARCHAR2(255),
+    BEN_COV VARCHAR2(255),
+    PLAN_NUM VARCHAR2(255),
+    CARRIER VARCHAR2(255),
+    EFF_DATE VARCHAR2(255) );
+    TYPE T_INS_CERT_BEN_T IS
+        TABLE OF T_INS_CERT_BEN_R;
+    FUNCTION STRING_CONTAINS_WORDS (
+        P_STRING             VARCHAR2,
+        P_WORDS              VARCHAR2,
+        P_MUST_CONTAIN_ALL   VARCHAR2 DEFAULT 'Y'
+    ) RETURN VARCHAR2;
+
+    FUNCTION REPORT_CONTAIN_TAGS (
+        P_REPORT_ID   NUMBER,
+        P_CLIENT_ID   VARCHAR2,
+        P_EMAIL       VARCHAR2,
+        P_TAGS        VARCHAR2
+    ) RETURN VARCHAR2;
+
+    PROCEDURE SET_REPORT_TAGS (
+        P_REPORT_ID   NUMBER,
+        P_CLIENT_ID   VARCHAR2,
+        P_EMAIL       VARCHAR2,
+        P_TAGS        VARCHAR2
+    );
+
+    FUNCTION GET_REPORT_TAGS (
+        P_REPORT_ID   NUMBER,
+        P_CLIENT_ID   VARCHAR2,
+        P_EMAIL       VARCHAR2
+    ) RETURN VARCHAR2;
+
+    FUNCTION INSURANCE_CERTIFICATE_BEN (
+        P_CLIENT_ID   VARCHAR2,
+        P_PLAN_ID     VARCHAR2,
+        P_MEM_ID      VARCHAR2
+    ) RETURN T_INS_CERT_BEN_T
+        PIPELINED;
+
+    FUNCTION INSURANCE_CERTIFICATE_DATA (
+        P_CLIENT_ID   VARCHAR2,
+        P_PLAN_ID     VARCHAR2,
+        P_MEM_ID      VARCHAR2
+    ) RETURN CLOB;
+
+    function is_report_visible(p_client_id varchar2, p_plan_id varchar2, p_report_id number) return varchar2;
+
+END PKG_REPORTS;
+
+/
+

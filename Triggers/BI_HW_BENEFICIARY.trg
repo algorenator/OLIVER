@@ -1,0 +1,12 @@
+--
+-- BI_HW_BENEFICIARY  (Trigger) 
+--
+CREATE OR REPLACE TRIGGER OLIVER.BI_HW_BENEFICIARY 
+BEFORE INSERT ON OLIVER.TBL_HW_BENEFICIARY 
+  for each row
+BEGIN
+  select HW_BENEFICIARY_seq.nextval into :new.HB_KEY from dual;
+END;
+/
+
+

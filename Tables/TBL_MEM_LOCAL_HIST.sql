@@ -1,0 +1,35 @@
+--
+-- TBL_MEM_LOCAL_HIST  (Table) 
+--
+CREATE TABLE OLIVER.TBL_MEM_LOCAL_HIST
+(
+  ML_CLIENT        VARCHAR2(10 BYTE),
+  ML_PLAN          VARCHAR2(10 BYTE),
+  ML_ID            VARCHAR2(100 BYTE),
+  ML_LOCAL         VARCHAR2(20 BYTE),
+  ML_EFF_DATE      DATE,
+  ML_TERM_DATE     DATE,
+  ML_ENTERED_DATE  DATE,
+  ML_RECIPROCAL    VARCHAR2(1 BYTE)             DEFAULT 'N',
+  ML_USR           VARCHAR2(100 BYTE)
+)
+TABLESPACE CDATV5DATAFILE
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

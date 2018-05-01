@@ -1,0 +1,34 @@
+--
+-- TBL_BENEFITS_CLASS  (Table) 
+--
+CREATE TABLE OLIVER.TBL_BENEFITS_CLASS
+(
+  BC_ID         VARCHAR2(100 BYTE),
+  BC_PLAN_ID    VARCHAR2(20 BYTE),
+  BC_CLIENT_ID  VARCHAR2(20 BYTE),
+  BC_DESC       VARCHAR2(300 BYTE),
+  BC_KEY        NUMBER                          NOT NULL,
+  BC_WP         NUMBER,
+  DATE_CREATED  DATE,
+  CREATED_BY    VARCHAR2(50 BYTE)
+)
+TABLESPACE CDATV5DATAFILE
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

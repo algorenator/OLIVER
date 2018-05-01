@@ -1,0 +1,72 @@
+--
+-- TBL_CONTMAST  (Table) 
+--
+CREATE TABLE OLIVER.TBL_CONTMAST
+(
+  CONT_CO_NO            VARCHAR2(10 BYTE),
+  CONT_DIV              VARCHAR2(2 BYTE),
+  CONT_PLAN_NO          VARCHAR2(15 BYTE),
+  CONT_DATE_FROM        DATE,
+  CONT_DATE_TO          DATE,
+  CONT_NON_WORK         VARCHAR2(1 BYTE),
+  CONT_RECEIVE_DATE     DATE,
+  CONT_WO_CODE          CHAR(1 BYTE),
+  CONT_HOURS            NUMBER(8,2),
+  CONT_RATE             NUMBER(6,2),
+  CONT_AMOUNT           NUMBER(8,2),
+  CONT_VARIANCE         NUMBER(8,2),
+  CONT_REMITTED         VARCHAR2(1 BYTE),
+  CONT_CHEQUE           VARCHAR2(20 BYTE),
+  CONT_DIFF_REASON      VARCHAR2(30 BYTE),
+  CONT_WO_AMOUNT        NUMBER(8,2),
+  CONT_FILLER           VARCHAR2(30 BYTE),
+  CONT_COMPUTED_HOURS   NUMBER(8,2),
+  CONT_COMPUTED_AMOUNT  NUMBER(8,2),
+  CONT_MILES            NUMBER(8,1),
+  CONT_MILE_RATE        NUMBER(5,4),
+  CONT_HW_RATE          NUMBER(5,2),
+  CONT_HW_AMT           NUMBER(12,2),
+  CONT_TF_RATE          NUMBER(5,2),
+  CONT_TF_AMT           NUMBER(12,2),
+  CONT_SF_RATE          NUMBER(5,2),
+  CONT_SF_AMT           NUMBER(12,2),
+  CONT_BF_RATE          NUMBER(5,2),
+  CONT_BF_AMT           NUMBER(12,2),
+  CONT_AF_RATE          NUMBER(5,2),
+  CONT_AF_AMT           NUMBER(12,2),
+  CONT_WD_RATE          NUMBER(5,2),
+  CONT_WD_AMT           NUMBER(12,2),
+  OTHER_AMT1            NUMBER(12,2),
+  OTHER_DESC1           VARCHAR2(30 BYTE),
+  OTHER_AMT2            NUMBER(10,2),
+  OTHER_DESC2           VARCHAR2(30 BYTE),
+  OTHER_AMT3            NUMBER(10,2),
+  OTHER_DESC3           VARCHAR2(30 BYTE),
+  OTHER_AMT4            NUMBER(10,2),
+  OTHER_DESC4           VARCHAR2(30 BYTE),
+  OTHER_AMT5            NUMBER(10,2),
+  OTHER_DESC5           VARCHAR2(30 BYTE),
+  OTHER_AMT6            NUMBER(10,2),
+  OTHER_DESC6           VARCHAR2(30 BYTE),
+  CONT_PEN_AMT          NUMBER(12,2)
+)
+TABLESPACE CDATV5DATAFILE
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

@@ -1,0 +1,33 @@
+--
+-- EARLY_EXIT_RED_FACTORS  (Table) 
+--
+CREATE TABLE OLIVER.EARLY_EXIT_RED_FACTORS
+(
+  EERF_CLIENT        VARCHAR2(20 BYTE),
+  EERF_PLAN          VARCHAR2(20 BYTE),
+  EERF_EFF_DATE      DATE,
+  EERF_AGE           NUMBER,
+  EERF_FACTOR        NUMBER(12,6),
+  EERF_CREATED_DATE  DATE                       DEFAULT SYSDATE,
+  EERF_CREATED_BY    VARCHAR2(30 BYTE)
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+NOCOMPRESS ;
+
+

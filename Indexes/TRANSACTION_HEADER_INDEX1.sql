@@ -1,0 +1,22 @@
+--
+-- TRANSACTION_HEADER_INDEX1  (Index) 
+--
+CREATE INDEX OLIVER.TRANSACTION_HEADER_INDEX1 ON OLIVER.TRANSACTION_HEADER
+(TH_EMPLOYER)
+TABLESPACE CDATV5DATAFILE
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           );
+
+
