@@ -1,6 +1,9 @@
 -- some changes
 -- ELIG_PROC_TEST  (Procedure) 
 --
+
+
+-- new
 CREATE OR REPLACE PROCEDURE OLIVER.ELIG_PROC_TEST(
         CLT_ID   VARCHAR2,
         PL_ID1   VARCHAR2,
